@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lato:100,300,400,700,900|Source+Code+Pro');
+
+/*==============GLOBAL SECTIONS==============*/
+
+html {
+    background-color: darkslategray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+}
+
+/*==============MAIN SECTIONS==============*/
+
+/*NAVIGATION RULES*/
+
+nav {
+    font-size: 14px;
+    width: 100%;
+    background-color: darkslategray;
+    z-index: 10;
+}
+
+nav ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline-block;
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: azure;
+    color: black;
+}
+
+nav li:hover a{
+    color: black;
+}
+
+nav a {
+    color: whitesmoke;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+
+.tech-logo {
+    height: 12px;
+    width: 12px;
+}
+
+/*HEADER RULES*/
+
+.header-box {
+    
+    padding: 10px 20px;
+}
+
+.header-box h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+
+.header-box h2 {
+    font-size: 2em;
+    
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    z-index: 0;
+
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 60vh;
+    min-height: 500px;
+}
+
+.header-box {
+    display: block;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+}
+
+/*MAIN*/
+
+main {
+    
+    height: 100%;
+    width: 60%;
+    margin: 20px auto;
+}
+
+/*ARTICLE*/
+
+article p {
+    line-height: 1.5em;
+}
+
+
+/*FOOTER*/
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: darkslategray;
+}
+
+footer div {
+    margin: 10px;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.navigation a:active,
+.navigation a:hover,
+.navigation a:focus {
+    color: white;
+}
+
+/*==============SUB-PAGES==============*/
+
+/*ASIDE*/
+
+aside.sidepanel {
+    position: fixed;
+    left: 80%; 
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 10px 10px;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+aside.sidepanel h3 {
+    margin: 10px 0;;
+}
+
+aside.sidepanel ol{
+    padding-left: 15px;
+    margin: 5px;
+}
+
+aside.sidepanel li{
+    margin-bottom: 5px;
+}
+
+/*SITEMAP*/
+
+.sitemap-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.sitemap-list ul {
+    margin-left: 15px; 
+    padding-left: 10px;
+    list-style-type: square;
+    border-left: 2px solid black;
+}
+
+.sitemap-list li {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.sitemap-list a:hover {
+    text-decoration-line: underline;
+}
+
+/*==============HELPER CLASS==============*/
+
+.sub-box{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.code {
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    font-family: "Source Code Pro", monospace;
+    font-size: inherit;
+    overflow-x: auto;
+}
+
+.code-block {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/*==============MEDIA QUERIES==============*/
+@media (max-width: 600px){
+    .splash {
+        min-height: 300px;
+    }
+    .header-box {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    main {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+
+    aside.sidepanel {
+        position: static;
+    }
+}
+
+@media (max-width: 1200px){
+    aside.sidepanel {
+        width: unset;
+    }
+}
