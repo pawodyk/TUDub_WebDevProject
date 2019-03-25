@@ -117,4 +117,4 @@ Each submission must be original work as plagiarism will result in a zero mark (
 **There will be a 5% penalty (out of the total 40% CA going for the assignment) for each day the assignment is late**. In other words, a submission between 11.56pm on the 2nd April and 11.55pm on the 3rd April will only be marked out of 35% CA, a submission between 11.56pm on the 3rd April and 11.55pm on the 4th April will be marked out of 30% CA and so on.
 There is no penalty for submitting early.
 
-[ITB Plagiarism Policy](https://www.itb.ie/AboutITB/QualityAssurancePolicies/3AS08%20Institute%20Procedural%20Guidel ines%20for%20Dealing%20with%20Instances%20of%20Plagiarism%20in%20Assignments%20and%2 0Examinations%20%2013%20June%202014.pdf)
+[ITB Plagiarism Policy](https://www.itb.ie/AboutITB/QualityAssurancePolicies/3AS08%20Institute%20Procedural%20Guidelines%20for%20Dealing%20with%20Instances%20of%20Plagiarism%20in%20Assignments%20and%20Examinations%20%2013%20June%202014.pdf)
