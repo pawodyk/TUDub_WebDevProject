@@ -14,7 +14,12 @@ body {
     background-color: whitesmoke;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 900;
 }
 
@@ -34,7 +39,7 @@ nav ul {
     padding: 5px;
     list-style-type: none;
     display: flex;
-    
+
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -47,12 +52,12 @@ nav li {
     text-align: center;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: azure;
     color: black;
 }
 
-nav li:hover a{
+nav li:hover a {
     color: black;
 }
 
@@ -70,7 +75,7 @@ nav a {
 /*HEADER RULES*/
 
 .header-box {
-    
+
     padding: 10px 20px;
 }
 
@@ -82,7 +87,7 @@ nav a {
 
 .header-box h2 {
     font-size: 2em;
-    
+
 }
 
 .splash {
@@ -114,7 +119,7 @@ nav a {
 /*MAIN*/
 
 main {
-    
+
     height: 100%;
     width: 60%;
     margin: 20px auto;
@@ -130,6 +135,7 @@ article p {
 /*FOOTER*/
 
 footer {
+    margin-top: 30px;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -146,13 +152,13 @@ footer div {
     flex-wrap: wrap;
 }
 
-.navigation{
+.navigation {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.navigation a{
+.navigation a {
     color: white;
     text-decoration: none;
     margin-right: 10px;
@@ -170,11 +176,13 @@ footer div {
 
 /*==============SUB-PAGES==============*/
 
+/*Technologies PAGE*/
+
 /*ASIDE*/
 
 aside.sidepanel {
     position: fixed;
-    left: 80%; 
+    left: 80%;
     width: 200px;
     border: 2px solid black;
     border-radius: 4px;
@@ -185,19 +193,64 @@ aside.sidepanel {
 }
 
 aside.sidepanel h3 {
-    margin: 10px 0;;
+    margin: 10px 0;
+    ;
 }
 
-aside.sidepanel ol{
+aside.sidepanel ol {
     padding-left: 15px;
     margin: 5px;
 }
 
-aside.sidepanel li{
+aside.sidepanel li {
     margin-bottom: 5px;
 }
 
-/*SITEMAP*/
+/*ABOUT PAGE*/
+
+.photo-box {
+    height: 30%;
+    width: 30%;
+    min-width: 200px;
+    min-height: 200px;
+
+    margin: 0 10px;
+
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+
+    padding: 5px;
+
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+#about dl dt {
+    margin-bottom: 5px; 
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+#about dl dd {
+    margin: 5px 10px 15px;
+}
+
+#about dl a {
+    text-decoration: none;
+    font-style: italic;
+    color: inherit;
+}
+
+#about dl a:hover {
+    color: darkblue;
+    text-decoration: underline;
+} 
+
+
+/*SITEMAP PAGE*/
 
 .sitemap-list {
     padding-left: 0;
@@ -205,7 +258,7 @@ aside.sidepanel li{
 }
 
 .sitemap-list ul {
-    margin-left: 15px; 
+    margin-left: 15px;
     padding-left: 10px;
     list-style-type: square;
     border-left: 2px solid black;
@@ -228,32 +281,50 @@ aside.sidepanel li{
 
 /*==============HELPER CLASS==============*/
 
-.sub-box{
+.sub-box {
     display: block;
     width: 60%;
     margin: 0 auto;
 }
 
 .code {
-    display: inline-block;
     background-color: lightgray;
     color: black;
     font-family: "Source Code Pro", monospace;
-    font-size: inherit;
+    font-size: 0.9em;
     overflow-x: auto;
+    padding: 0 5px;
 }
 
 .code-block {
     display: block;
     padding: 10px 0;
-    font-size: 14px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
 }
 
 /*==============MEDIA QUERIES==============*/
-@media (max-width: 600px){
+
+@media (max-width: 400px) {
+    .photo-box{
+        margin: 0;
+        margin-bottom: 10px; 
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
     .splash {
         min-height: 300px;
     }
+
     .header-box {
         font-size: 10px;
         padding: 10px 0;
@@ -267,9 +338,11 @@ aside.sidepanel li{
     aside.sidepanel {
         position: static;
     }
+
+    
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     aside.sidepanel {
         width: unset;
     }
