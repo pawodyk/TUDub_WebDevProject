@@ -93,54 +93,96 @@
     <main>
         <aside class="sidepanel">
             <h3>Table of Contents</h3>
-            <ol>
+            <ol class="toc">
                 <li><a href="#basics">Basics of HTML</a></li>
-                <li><a href="#somantics">Somantic HTML</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#syntax">HTML Syntax</a></li>
+                <li><a href="#semantics">HTML5 Semantic usage</a></li>
             </ol>
         </aside>
 
         <article id="basics">
             <h2>Basics of HTML</h2>
-            <p>HTML stands for Hypertext Markup Language. It is the most widely used language to write Web Pages.</p>
+            <p>HTML stands for Hypertext Markup Language. It is the most widely used markup language to write Web Pages. It is responsible for controling the structure and semantics of web page.</p>
 
-            <p>Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.</p>
+            <p>Markup languages use tags to "mark-up" a content of the document inside them, using tags. A paragraph, for example, is marked with <code>&lt;p&gt;</code> and closed with <code>&lt;/p&gt;</code>, this indicates to the web browser that this section is a paragraph. <code class="code-block">&lt;p&gt;This is a basic paragraph of text in html&lt;/p&gt;</code></p>
 
-            <p>As its name suggests, HTML is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.</p>
+            <p>While Hypertext refers to the way in which HTML documents are linked internally and externally, using the anchor tag for example:
+                <code class="code-block">&lt;a href="http://www.google.com"&gt;Link to Google&lt;/a&gt;</code>
+                The above example links to the Google search page and shows how we can link one web page to another using <a href="">hypertext</a>. In the above example we can also observe use of attribute <code>href=""</code>.</p>
 
-            <p>Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers.</p>
+            <h3>Short origin story of HTML</h3>
+            <p>Initially HTML was developed to allow researchers and academicians to share a scientific research and documentation, focusing mostly on standard document elements like headers, paragraphs and floated images. With the advent of World Wide Web, HTML evolved and become widely used to format web pages with the help of different tags available in HTML language, allowing for Embedding the Multimedia.</p>
 
-            <p>Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.</p>
-
-            <p>HTML uses tags to markup. eg. <span class="code">&lt;html&gt;</span></p>
-
-            <pre class="code code-block">
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-
-        &lt;head&gt;
-            &lt;title&gt;Here goes your page title&lt;/title&gt;
-        &lt;/head&gt;
-
-        &lt;body&gt;
-            &lt;h1&gt;Here goes your heading&lt;/h1&gt;
-            &lt;p&gt;Here is a paragraph&lt;/p&gt;
-        &lt;/body&gt;
-
-    &lt;/html&gt;</pre>
         </article>
 
-        <article id="somantics">
-            <h2>HTML5 somantic usage</h2>
-            <p>An important principle of the Web Standards movement that is responsible for the industry we have today is the idea of using HTML elements for what they are rather than how they may appear in the browser by default. This is known as using Semantic HTML.</p>
-            <p>Examples of semantic HTML tags include the header tags <span class="code">&lt;h1&gt;</span> through <span class="code">&lt;h6&gt;</span>, <span class="code">&lt;blockquote&gt;</span>, <span class="code">&lt;code&gt;</span> and <span class="code">&lt;em&gt;</span>. There are many more semantic HTML tags that can be used as you build a standards-compliant website.</p>
+        <article id="syntax">
+            <h2>HTML Syntax</h2>
+            <p>The example of very basic HTML page:</p>
+
+            <code class="code-block">
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;title&gt;Here goes your page title&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        <span class="comment">&lt;!-- Comment Example --&gt;</span>
+        &lt;h1&gt;Here goes your heading&lt;/h1&gt;
+        &lt;p&gt;Here is a paragraph&lt;/p&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;</pre>
+            </code>
+            <p>In the above exaple we can see the basic structure of the html document with title, heading and paragraph. In Practice the HTML documents consist of many more html tags, however using the very basic code we can make a website.</p>
+
+            <p>At the top of the page we can see <code class="code-block">&lt;!DOCTYPE html&gt;</code> this code indicate that this is a HTML5 docuemnt and is called <strong>Document Type Declaration</strong></p>
+
+            <p>Two main sections of the web page are <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>, this element distinguish to the browser which section should be displayed to the user and which should be read by computer eg. web browser or search engine</p>
+
+            <p>The <code>&lt;head&gt;</code> element is holding elements such as:</p>
+            <blockquote>
+                <ul class="nolinststyle mar-0">
+                    <li><code>&lt;meta&gt;</code> - which hold metadata (or information) about the HTML document.</li>
+                    <li><code>&lt;title&gt;</code> - shows page name displayed in the web browser tab as well as the name of the bookmark</li>
+                    <li><code>&lt;link&gt;</code> - likes the external stylesheet to HTML document</li>
+                    <li><code>&lt;style&gt;</code> - implements the internel stylesheet to the HTML document</li>
+                    <li><code>&lt;script&gt;</code> - implements the internel or links the external script to the HTML document</li>
+                </ul>
+            </blockquote>
+
+            <p>The <code>&lt;body&gt;</code> element contains all the information that is displayed to the user. Most of the tags represent the elements of the document like headers, paragraph, images or links. eg.:</p>
+
+            <code class="code-block">
+<pre>&lt;h1&gt;This is a main header&lt;h1&gt;
+&lt;h2&gt;This is a sub header&lt;h2&gt;
+ &#8942;
+&lt;h6&gt;This is a least important header&lt;h6&gt;
+
+&lt;p&gt;This is a paragraph&lt;&gt;
+
+&lt;img src="myPhoto.jpg" alt="my Photo"&gt;
+
+&lt;a href="https://google.com"&gt;This is a link to google website&lt;body&gt;
+&lt;a href="#footer"&gt;This is an internal link, it will take you to the element with id footer&lt;body&gt;
+&lt;a href="#"&gt;This is an empty link, it will take you to the top of the current&lt;body&gt;</pre>
+            </code>
             
+
+            <p>The html headings are indicated with <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> where the number beside the letter <strong>h</strong> indicated the imporatnce of the heading, ie. main heading on the page will always be marked by <code>&lt;h1&gt;</code> while sub-heading will be <code>&lt;h2&gt;</code> and so on... This is just like in any document or book.</p>
+
+            <p>The paragraph is a most basic element of the page and is marked by <code>&lt;p&gt;</code> tag. </p>
+
+            <p>Images are marked with a tag <code>&lt;img&gt;</code> and composuary attribute <code>src=""</code> which points to the image. It is also important to add <code>alt=""</code> attribute that provides the semantic meaning to screen readers and also will display the text when photo could not be displayed.</p>
+        </article>
+
+        <article id="semantics">
+            <h2>HTML5 Semantic usage</h2>
+            <p>Semantic HTML is a way of adding and enforcing a meaning to the web page instead of just a presentation or looks. It is an important principle of the Web Standards movement and is currentlly supported by all modern web browsers</p>
+
+            <p>Some of the first semantic HTML tags include the header tags <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;code&gt;</code> and <code>&lt;em&gt;</code> as well as the semantic elements introduced by HTML 5 such as <code>section</code>, <code>article</code>, <code>footer</code>, <code>progress</code>, <code>nav</code>, <code>aside</code>, <code>mark</code>, and <code>time</code>. There are many more semantic tags available and they can be found in <a href="https://www.w3.org/TR/html52/dom.html#elements-semantics" target="_blank">HTML5 specification by w3 Consortium</a></p>
+            <p></p>
         </article>
 
     </main>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lato:100,300,400,700,900|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Source+Code+Pro');
 
 /*==============GLOBAL SECTIONS==============*/
 
@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
 }
 
@@ -20,6 +20,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Lato", sans-serif;
     font-weight: 900;
 }
 
@@ -131,6 +132,19 @@ article p {
     line-height: 1.5em;
 }
 
+blockquote {
+    margin: 0 1em;
+    padding: 1em 2em 0.5em;
+
+    background-color: white;
+
+    border-left: 10px solid lightslategray;
+
+}
+
+article ul li {
+    margin-bottom: 0.5em;
+}
 
 /*FOOTER*/
 
@@ -201,7 +215,7 @@ footer div {
 }
 
 .tech-image {
-    background-color: rgb(240, 240, 240);
+    background-color: whitesmoke;
     height: calc(100% - 10px);
     padding: 5px;
     border-bottom-left-radius: 15px;
@@ -225,6 +239,7 @@ footer div {
 
 .tech-desc h3 {
     margin: 0;
+    text-align: right;
 }
 
 /*TECHNOLOGIES PAGE*/
@@ -254,6 +269,17 @@ aside.sidepanel ol {
 
 aside.sidepanel li {
     margin-bottom: 5px;
+}
+
+aside.sidepanel ol a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+aside.sidepanel ol a:hover {
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 /*ABOUT PAGE*/
@@ -331,24 +357,49 @@ aside.sidepanel li {
 
 /*==============HELPER CLASS==============*/
 
+pre {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+code {
+    padding: 0.15em 0.5em;
+
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.85em;
+
+    background-color: gainsboro;
+    color: black;
+    overflow-x: auto;
+}
+
+code.code-block {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.5em 2em;
+    line-height: 1.5em;
+    border-left: 10px solid olivedrab;
+}
+
+.code-block span.comment {
+    color: lightslategray;
+}
+
+.code-block-wrong {
+    border-left-color: crimson;
+}
+
 .sub-box {
     display: block;
     width: 60%;
     margin: 0 auto;
 }
 
-.code {
-    background-color: lightgray;
-    color: black;
-    font-family: "Source Code Pro", monospace;
-    font-size: 0.9em;
-    overflow-x: auto;
-    padding: 0 5px;
-}
-
-.code-block {
-    display: block;
-    padding: 10px 0;
+.nolinststyle {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .f-left {
@@ -357,6 +408,14 @@ aside.sidepanel li {
 
 .f-right {
     float: right;
+}
+
+.mar-0 {
+    margin: 0;
+}
+
+.pad-0 {
+    padding: 0;
 }
 
 /*==============MEDIA QUERIES==============*/
