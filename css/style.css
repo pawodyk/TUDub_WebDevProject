@@ -24,6 +24,10 @@ h6 {
     font-weight: 900;
 }
 
+em {
+    font-style: oblique 0.1;
+}
+
 /*==============MAIN SECTIONS==============*/
 
 /*NAVIGATION RULES*/
@@ -249,17 +253,26 @@ footer div {
 aside.sidepanel {
     position: fixed;
     left: 80%;
-    width: 200px;
-    border: 2px solid black;
-    border-radius: 4px;
-    padding: 10px;
+    width: calc(20% - 20px);
+    max-width: 300px;
+
+    padding: 0;
     margin: 0 10px 10px;
     overflow-x: hidden;
+
+    border: 2px solid black;
+    border-radius: 4px;
     background-color: whitesmoke;
 }
 
+aside.sidepanel header {
+    background-color: darkslategray;
+    padding: 10px 5px;
+}
+
 aside.sidepanel h3 {
-    margin: 10px 0;
+    margin: 0;
+    color: whitesmoke;
 }
 
 aside.sidepanel ol {
@@ -271,7 +284,7 @@ aside.sidepanel li {
     margin-bottom: 5px;
 }
 
-aside.sidepanel ol a {
+aside.sidepanel a {
     color: black;
     font-weight: 500;
     text-decoration: none;
@@ -281,6 +294,7 @@ aside.sidepanel ol a:hover {
     text-decoration: underline;
     font-weight: 700;
 }
+
 
 /*ABOUT PAGE*/
 
@@ -356,6 +370,23 @@ aside.sidepanel ol a:hover {
 }
 
 /*==============HELPER CLASS==============*/
+
+.top_button {
+    margin: 15px auto 10px;
+    width:66px;
+}
+
+.top_button span{
+    padding: 5px;
+    
+    color: whitesmoke;
+    background-color: darkslategray;
+    
+    border: 2px solid black;
+    border-radius: 5px;
+    
+
+}
 
 pre {
     margin: 0;
@@ -446,13 +477,13 @@ code.code-block {
 
     aside.sidepanel {
         position: static;
+        margin: 0 0 10px;
+        width: 100%;
+        max-width: unset;
     }
 
-
-}
-
-@media (max-width: 1200px) {
-    aside.sidepanel {
-        width: unset;
+    aside.sidepanel .top_button {
+        display: none;
     }
+
 }
