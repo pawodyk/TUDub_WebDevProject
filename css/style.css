@@ -411,11 +411,15 @@ code.code-block {
     margin: 0.5em 0;
     padding: 0.5em 2em;
     line-height: 1.5em;
-    border-left: 10px solid olivedrab;
+    border-left: 10px solid darkslategray;
 }
 
 .code-block span.comment {
     color: lightslategray;
+}
+
+.code-block-correct {
+    border-left-color: olivedrab;
 }
 
 .code-block-wrong {
