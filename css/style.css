@@ -143,10 +143,10 @@ blockquote {
     background-color: white;
 
     border-left: 10px solid lightslategray;
-
 }
 
-article ul li {
+article ul li,
+article ol li {
     margin-bottom: 0.5em;
 }
 
@@ -318,6 +318,10 @@ aside.sidepanel ol a:hover {
     border-radius: 10px;
 }
 
+#about dl {
+    padding: 0;
+}
+
 #about dl dt {
     margin-bottom: 5px;
     font-weight: 700;
@@ -325,7 +329,12 @@ aside.sidepanel ol a:hover {
 }
 
 #about dl dd {
-    margin: 5px 10px 15px;
+    margin: 0 10px 15px 0;
+    padding: 5px 0.5em 0 1em;
+    border-left: 0.5em solid darkslategray;
+}
+#about dl dd ul {
+    padding-left: 1em;
 }
 
 #about dl a {
@@ -338,6 +347,55 @@ aside.sidepanel ol a:hover {
     color: darkblue;
     text-decoration: underline;
 }
+
+#links {
+    margin: 50px 0;
+}
+
+#links h2{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-links div{
+    display: flex;
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+    background-color: lightseagreen;
+    border: 2px darkslategray solid ;
+    margin: 10px;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .social-links .fa-linkedin-in {
+    color: darkblue;
+}
+
+.social-links .fa-stack-overflow {
+    color: orangered;
+} */
+
+
+
+
 
 
 /*SITEMAP PAGE*/
@@ -373,18 +431,18 @@ aside.sidepanel ol a:hover {
 
 .top_button {
     margin: 15px auto 10px;
-    width:66px;
+    width: 66px;
 }
 
-.top_button span{
+.top_button span {
     padding: 5px;
-    
+
     color: whitesmoke;
     background-color: darkslategray;
-    
+
     border: 2px solid black;
     border-radius: 5px;
-    
+
 
 }
 
@@ -414,7 +472,7 @@ code.code-block {
     border-left: 10px solid darkslategray;
 }
 
-.code-block span.comment {
+code span.comment {
     color: lightslategray;
 }
 
@@ -451,6 +509,17 @@ code.code-block {
 
 .pad-0 {
     padding: 0;
+}
+
+.key {
+    padding: 0.2em 0.3em;
+
+    font-size: 0.6em;
+    font-weight: 700;
+    text-align: center;
+
+    background-color: lightgrey;
+    border: 4px lightslategray inset;
 }
 
 /*==============MEDIA QUERIES==============*/

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CA1 - Pawel Wodyk</title>
+    <title>Web Dev Tech | CSS</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -53,7 +53,7 @@
                 <li>
                     <a href="./FA.html">
                         <i class="fab fa-font-awesome"></i>
-                        <span>Fontawesome</span>
+                        <span>Font&nbsp;Awesome</span>
                     </a>
                 </li>
                 <li>
@@ -107,27 +107,24 @@
 
         <article id="basics">
             <h2>Basics of CSS</h2>
-            <p>CSS is Cascading Style Sheet, provides the styleing to markup language like HTML. HTML in itself do not provide any styling to the document and the "<em>default</em>" styling we see when we display the page without any css code is a <strong>default browser style</strong> provided by the browser (note that it may slightly differ between browsers).</p>
-            <code class="code-block">
-<pre>
-<span class="comment">/* Paragraph tag - Selector */</span>
+            <p>CSS is Cascading Style Sheet, provides the styling to markup language like HTML. HTML in itself do not provide any styling to the document and the "<em>default</em>" styling we see when we display the page without any css code is a <strong>default browser style</strong> provided by the browser (note that it may slightly differ between browsers).</p>
+            
+<pre><code class="code-block"><span class="comment">/* Paragraph tag - Selector */</span>
 p {
     <span class="comment">/* Example of Style declaration consisted of property and value */</span>
     font-family: sans-serif;
-}
-</pre>
-            </code>
+}</code></pre>
+            
             <p>As shown in the example above the CSS consist of the selector, content block and list of attributes. Selector, as the name indicates, selects the appropriate tag, id or class in HTML. After the selector we open curly brackets <code>{ }</code> to start the declaration block.</p>
             <p>Inside declaration block we can specify the propery followed by <code>:</code> and then attribute value. We close the attribute declaration using <code>;</code> For example:<code class="code-block">color:  red;</code> which changes the color of the text to <code>red</code>.</p>
-            <p>Thera are many CSS properties and each of them uses set of coresponding values, for the full list visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Mozilla Developer Network</a> or <a href="https://www.w3.org/Style/CSS/" target="_blank">w3c Documentation</a></p>
+            <p>There are many CSS properties and each of them uses set of corresponding values, for the full list visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Mozilla Developer Network</a> or <a href="https://www.w3.org/Style/CSS/" target="_blank">w3c Documentation</a></p>
         </article>
 
         <article id="selectors">
             <h2>CSS Selectors</h2>
             <p>CSS Selectors allow us to select specific tags either by tag type, tag id or tag class as per example below:</p>
-            <code class="code-block">
-<pre>
-<span class="comment">/* Example of a comment */</span>
+            
+<pre><code class="code-block"><span class="comment">/* Example of a comment */</span>
 
 <span class="comment">/* Basic selector - selecting all header 1 tags */</span>
 h1 { }
@@ -146,10 +143,10 @@ h3 { }
 
 <span class="comment">/* ID selector - selecting element with id logo */</span>
 #logo { }
-</pre>
-			</code>
+</code></pre>
+			
             <p>The above example shows only the most basic selectors. There are many more selectors allowing us to target, for&nbsp;example, direct children using <code>></code>, simblings using <code>+</code> or even all elements using universal selector <code>*</code>. The list of all selectors can be found on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Simple_selectors" target="_blank">Mozilla Developer Network</a> or <a href="https://www.w3.org/TR/selectors-3/#simple-selectors" target="_blank">w3c CSS specification</a></p>
-            <p>It is important to note that selectors have predefined specificity which may cause one CSS rule to overwrite other rule. To learn more please see this article at <a href="https://css-tricks.com/specifics-on-css-specificity/" target="_blank">CSS-TRICKS</a> or documentation at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">Mozilla Developer Netork</a></p>
+            <p>It is important to note that selectors have predefined specificity which may cause one CSS rule to overwrite other rule. To learn more please see this article at <a href="https://css-tricks.com/specifics-on-css-specificity/" target="_blank">CSS-TRICKS</a> or documentation at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">Mozilla Developer Network</a></p>
         </article>
 
         <article id="pseudo">
