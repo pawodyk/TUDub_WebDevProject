@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Tech | JavaScript</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <i class="fas fa-home"></i>
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./HTML.html">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./CSS.html">
+                        <i class="fab fa-css3"></i>
+                        <span>CSS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./JS.html">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./SASS.html">
+                        <i class="fab fa-sass"></i>
+                        <span>SASS & SCSS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./BOOT.html">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./FA.html">
+                        <i class="fab fa-font-awesome"></i>
+                        <span>Font&nbsp;Awesome</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./JQUERY.html">
+                        <img class="tech-logo" src="../images/jquery.png" alt="jquery logo">
+                        <span>JQuery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./JSON.html">
+                        <img class="tech-logo" src="../images/JSON.png" alt="JSON logo">
+                        <span>JSON</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./JASMINE.html">
+                        <img class="tech-logo" src="../images/jasmine.png" alt="jasmine framework logo">
+                        <span>Jasmine</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./ABOUT.html">
+                        <i class="far fa-address-card"></i>
+                        <span>about me</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="header-box">
+            <h1>JavaScript <i class="fab fa-js-square"></i></h1>
+        </div>
+
+    </header>
+
+    <main>
+        <aside class="sidepanel">
+            <header>
+                <h3>Table of Contents:</h3>
+            </header>
+            <ol class="toc">
+                <li><a href="#basics">Basics of JavaScript</a></li>
+                <li><a href="#syntax">JavaScript syntax</a></li>
+                <li><a href="#tbc">More JavaScript</a></li>
+            </ol>
+            <div class="top_button">
+                <a href=""><span ><i class="fas fa-arrow-circle-up"></i>&nbsp;TOP</span></a>
+            </div>
+        </aside>
+
+        <article id="basics">
+            <h2>Basics of JavaScript</h2>
+            <p>JavaScript is <a href="https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_programming_language" target="_blank">dynamic</a>, <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing#Definitions_of_%22strong%22_or_%22weak%22" target="_blank">weakly typed</a>, <a href="https://www.computerhope.com/jargon/h/highll.htm" target="_blank">high-level</a> programing language. Together with HTML and CSS it is a cornerstone of the web development. Where HTML is responsible for structure of the document and CSS is responsible for looks, the javascript allows us to expand the functionality of the website beyond the simple text document. It is widely used for programing web applications and adding functionality to web pages.</p>
+            <p>JavaScript is a interpreted programing language and it can be typed in directly into console build in most modern web browsers. In Order to access the Console in Mozilla Firefox or Google Chrome press the <span class="key">F12</span> key or right click the page and select "<em>Inspect</em>". Next click on the console tab and voil&agrave; you can start writing your javascript code. For Example <code class="code-block">console.log("Hello, World!");</code></p>
+        </article>
+
+        <article id="syntax">
+            <h2>JavaSctipt Syntax</h2>
+            <p>To declare variable we simply use <code class="code-block">var myVariable = "Hello, World"</code></p>
+            <p>The five primitive data types in JavaScript are:</p>
+            <blockquote>
+                <ol class="mar-0 pad-0">
+                    <li><code>String</code> - Hold String of characters</li>
+                    <li><code>Number</code> - Hold numbers, including special not-a-real-number values like:</li>
+                        <ul>
+                            <li><code>Infinity</code> Infinity</li>
+                            <li><code>-Infinity</code> Minus Infinity</li>
+                            <li><code>NaN</code> Not a Number (for example a result of dividing 0 by 0)</li>
+                        </ul>
+                    <li><code>Boolean</code> - Holds True or False value</li>
+                    <li><code>Undefined</code> - Uninitialized variable will hold a value of undefined</li>
+                    <li><code>Null</code> - Null indicates the empty object, in javascript it differs from undefined by the fact that it is </li>
+                </ol>
+            </blockquote>
+            <p>It is important to note that Strings in JavaScript are immutable, and also that JavaScript do not distinguish between integer values and floating points, instead it use IEEE-754 standard to represent all numbers as a double floating points.</p>
+
+            <h3>Arithmetic operations:</h3>
+            
+<pre><code class="code-block"><span class="comment">// Simple arithmetic operations:</span>
+9 + 2 <span class="comment">// Additon</span>
+9 - 2 <span class="comment">// Subtraction</span>
+9 * 2 <span class="comment">// Multiplication</span>
+9 / 2 <span class="comment">// Division</span>
+9 % 2 <span class="comment">// Modulo Division (Reminder)</span>
+</code></pre>
+
+        <h3>Declaring Variables</h3>
+        <p>Variable declaration in JavaScript: <code class="code-block">var myVar1;</code> The Scope of variable declared this way is its current execution content, which means that their scope is within current function or program if they were declared globally. If you wish to declare a variable with a block scope you need to use: <code class="code-block">let myVar2;</code></p>
+        <p>Finally if you wish to declare constant you need to use: <code class="code-block">const myConst = "Hello, World!"</code> As expected the declared constant value cannot be changed once assigned during execution, and cannot be redeclared. Constants in javascript have block scope just like <code>let</code> declaration.</p>
+
+        <h3>Conditional Statements</h3>
+
+<pre><code class="code-block">if (condition){
+    <span class="comment">// if condition is true execute this code block... </span>
+} else if (condition) {
+    <span class="comment">// else if condition is true execute this code block... </span>
+} else {
+    <span class="comment">// if neither is true execute this code block.... </span>
+}
+</code></pre>
+
+        <h3>Loops</h3>
+            
+<pre><code class="code-block"><span class="comment">// FOR LOOP:</span>
+for (var i = 0; i &lt; 10; i ++) {
+    console.log("Number: " + i);
+}
+
+<span class="comment">// While Loop:</span>
+var count = 10;
+while(count &gt; 0) {
+    console.log(count);
+    count--;
+}
+console.log("... TAKE OFF");
+
+<span class="comment">// Do While Loop:</span>
+var x = 0;
+do {
+  x += 2;
+  console.log(x);
+} while (x &gt; 5);
+
+<span class="comment">// Enhanced For Loop</span>
+for (var item in myArray) {
+    console.log(item + " in my array");
+}
+</code></pre>
+
+        </article>
+        
+        <article id="tbc">
+            <h2>More JavaScript</h2>
+            <p>There is much more to JavaScript then this basic guide. JavaScript is a very interesting topic and there is a lot to it. I just covered the most basic information, to learn more about JavaScript, visit <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">Mozilla Developer Network</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="legal">
+            <div>CA 1 - Project by Pawel Wodyk</div>
+            <div>TU Dublin - Web Development Module</div>
+        </div>
+        <div class="navigation">
+            <a href="#"><i class="fas fa-arrow-circle-up"></i>&nbsp;TOP</a>
+            <a href="../MAP.html"><i class="fas fa-sitemap"></i>&nbsp;SITEMAP</a>
+        </div>
+    </footer>
+</body>
+
+</html>
