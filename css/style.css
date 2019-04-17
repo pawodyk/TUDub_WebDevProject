@@ -64,6 +64,7 @@ nav li:hover {
 
 nav li:hover a {
     color: black;
+    font-weight: 700;
 }
 
 nav a {
@@ -75,25 +76,14 @@ nav a {
 .tech-logo {
     height: 12px;
     width: 12px;
+    filter: grayscale(1) invert(1) brightness(5);
+}
+
+nav li:hover a .tech-logo{
+    filter: brightness(0);
 }
 
 /*HEADER RULES*/
-
-.header-box {
-
-    padding: 10px 20px;
-}
-
-.header-box h1 {
-    font-size: 4em;
-    margin: 0;
-    padding: 0;
-}
-
-.header-box h2 {
-    font-size: 2em;
-
-}
 
 .splash {
     display: flex;
@@ -119,6 +109,17 @@ nav a {
     text-align: center;
     color: aliceblue;
     padding: 20px;
+}
+
+.header-box h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+
+.header-box h2 {
+    font-size: 2em;
+
 }
 
 /*MAIN*/
@@ -154,7 +155,7 @@ article ol li {
 
 footer {
     margin-top: 20px;
-    color: white;
+    color: whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -177,11 +178,11 @@ footer div {
 }
 
 .navigation a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     margin-right: 10px;
     margin-bottom: 10px;
-    border: solid 1px white;
+    border: solid 2px whitesmoke;
     border-radius: 10%;
     padding: 5px;
 }
@@ -333,6 +334,7 @@ aside.sidepanel ol a:hover {
     padding: 5px 0.5em 0 1em;
     border-left: 0.5em solid darkslategray;
 }
+
 #about dl dd ul {
     padding-left: 1em;
 }
@@ -352,7 +354,7 @@ aside.sidepanel ol a:hover {
     margin: 50px 0;
 }
 
-#links h2{
+#links h2 {
     text-align: center;
     margin: 0;
     padding-top: 10px;
@@ -366,13 +368,13 @@ aside.sidepanel ol a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.social-links div{
+.social-links div {
     display: flex;
     width: 2em;
     height: 2em;
     font-size: 2em;
     background-color: lightseagreen;
-    border: 2px darkslategray solid ;
+    border: 2px darkslategray solid;
     margin: 10px;
     border-radius: 50%;
 
@@ -380,7 +382,7 @@ aside.sidepanel ol a:hover {
     justify-content: center;
 }
 
-.social-links a{
+.social-links a {
     text-decoration: none;
     color: inherit;
 }
@@ -392,11 +394,6 @@ aside.sidepanel ol a:hover {
 .social-links .fa-stack-overflow {
     color: orangered;
 } */
-
-
-
-
-
 
 /*SITEMAP PAGE*/
 
