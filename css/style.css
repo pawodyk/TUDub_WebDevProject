@@ -296,6 +296,20 @@ aside.sidepanel ol a:hover {
     font-weight: 700;
 }
 
+.top_button {
+    margin: 15px auto 10px;
+    width: 66px;
+}
+
+.top_button span {
+    padding: 5px;
+
+    color: whitesmoke;
+    background-color: darkslategray;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
 
 /*ABOUT PAGE*/
 
@@ -382,6 +396,10 @@ aside.sidepanel ol a:hover {
     justify-content: center;
 }
 
+.social-links div:hover {
+    background-color: #16cec5;
+}
+
 .social-links a {
     text-decoration: none;
     color: inherit;
@@ -424,24 +442,7 @@ aside.sidepanel ol a:hover {
     text-decoration-line: underline;
 }
 
-/*==============HELPER CLASS==============*/
-
-.top_button {
-    margin: 15px auto 10px;
-    width: 66px;
-}
-
-.top_button span {
-    padding: 5px;
-
-    color: whitesmoke;
-    background-color: darkslategray;
-
-    border: 2px solid black;
-    border-radius: 5px;
-
-
-}
+/*==============SPECIAL RULES==============*/
 
 pre {
     margin: 0;
@@ -481,6 +482,19 @@ code span.comment {
     border-left-color: crimson;
 }
 
+.key {
+    padding: 0.2em 0.3em;
+
+    font-size: 0.6em;
+    font-weight: 700;
+    text-align: center;
+
+    background-color: lightgrey;
+    border: 4px lightslategray inset;
+}
+
+/*==============HELPER CLASS==============*/
+
 .sub-box {
     display: block;
     width: 60%;
@@ -506,17 +520,6 @@ code span.comment {
 
 .pad-0 {
     padding: 0;
-}
-
-.key {
-    padding: 0.2em 0.3em;
-
-    font-size: 0.6em;
-    font-weight: 700;
-    text-align: center;
-
-    background-color: lightgrey;
-    border: 4px lightslategray inset;
 }
 
 /*==============MEDIA QUERIES==============*/
