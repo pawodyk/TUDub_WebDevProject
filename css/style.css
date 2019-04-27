@@ -174,17 +174,22 @@ footer div {
 .navigation {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .navigation a {
     color: whitesmoke;
     text-decoration: none;
+    text-transform: uppercase;
     margin-right: 10px;
     margin-bottom: 10px;
     border: solid 2px whitesmoke;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 5px;
+
+    width: 100px;
+    text-align: center;
 }
 
 .navigation a:active,
