@@ -447,6 +447,12 @@ aside.sidepanel ol a:hover {
     text-decoration-line: underline;
 }
 
+.sitemap-list a img {
+    filter: brightness(0);
+    height: 15px;
+    width: 15px;
+}
+
 /*==============SPECIAL RULES==============*/
 
 pre {
