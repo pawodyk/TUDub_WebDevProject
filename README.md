@@ -3,7 +3,7 @@
 Made by Pawel Wodyk as part of CA1 - Introduction to Web Development Project at Techonological University Dublin
 <hr>
 
-<a href="https://pwodyk.github.io/TUDub_WebDevProject/">DEPLOYED ON GITHUB</a>
+<a href="https://pawodyk.github.io/TUDub_WebDevProject/">DEPLOYED ON GITHUB</a>
 
 ## INSTRUCTIONS/SPECIFICATIONS
 
